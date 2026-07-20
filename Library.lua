@@ -469,8 +469,7 @@ function Library:SetDPIScale(value: number)
     assert(type(value) == "number", "Expected type number for DPI scale but got " .. typeof(value))
     
     DPIScale = value / 100
-    Library.MinSize = (if Library.IsMobile then Vector2.new(550, 200) else Vector2.new(550, 300)) * DPIScale
-end
+Library.MinSize = Vector2.new(550, 300) * DPIScale
 
 function Library:SafeCallback(Func, ...)
     -- https://github.com/deividcomsono/Obsidian/blob/main/Library.lua#L1100
