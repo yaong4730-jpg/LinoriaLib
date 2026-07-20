@@ -470,7 +470,7 @@ function Library:SetDPIScale(value: number)
     
     DPIScale = value / 100
 Library.MinSize = Vector2.new(550, 300) * DPIScale
-
+		end
 function Library:SafeCallback(Func, ...)
     -- https://github.com/deividcomsono/Obsidian/blob/main/Library.lua#L1100
     if not (Func and typeof(Func) == "function") then
